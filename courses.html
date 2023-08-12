@@ -1,0 +1,557 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Courses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap" rel="stylesheet"> -->
+
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      .about-img img {
+    position: relative;
+    z-index: 2;
+}
+
+.about-img::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-repeating-radial-gradient(#FFFFFF, #EEEEEE 5px, transparent 5px, transparent 10px);
+    background-image: -moz-repeating-radial-gradient(#FFFFFF, #EEEEEE 5px, transparent 5px, transparent 10px);
+    background-image: -ms-repeating-radial-gradient(#FFFFFF, #EEEEEE 5px, transparent 5px, transparent 10px);
+    background-image: -o-repeating-radial-gradient(#FFFFFF, #EEEEEE 5px, transparent 5px, transparent 10px);
+    background-image: repeating-radial-gradient(#FFFFFF, #EEEEEE 5px, transparent 5px, transparent 10px);
+    background-size: 20px 20px;
+    transform: skew(20deg);
+    z-index: 1;
+}
+.btnA{
+    background: #097ee4;
+    text-decoration: none;
+    font-weight: 550;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.1),
+                -10px -10px 10px 1px rgba(255, 255, 255, 0);
+    font-family: sans-serif;
+    
+}
+
+.btnA:hover{
+    color: #fff;
+  
+    background: #0085f9;
+    /* box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.1),
+               inset -10px -10px 10px 1px rgba(255, 255, 255, 0.2); */
+}
+p{
+  font-size: 18px;
+}
+    </style>
+
+    
+
+    
+  </head>
+  <body>
+
+
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light " >
+        <div class="container-fluid">
+         
+
+          
+          
+
+          <img class="logo" src="img/Logo Final.jpg" class="img-fluid bd-placeholder" width="170vw" height="60vh" > 
+          
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=" #navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon "></span>
+            
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item ">
+                <a class="nav-link "  href="/index.html"><i class="fa-solid fa-house"></i>Home</a>
+                </li>
+            
+                <li class="nav-item dropdown">
+                 
+                  <a class="nav-link " href="/about.html">
+                   Who We Are
+                   </a> 
+                  
+                   <ul class="dropdown-menu active" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="">Meet the Team</a></li>
+                  <li><a class="dropdown-item" href="/about.html#Our Mission & Vision">Our Mission & Vision</a></li>
+                  <li><a class="dropdown-item" href="/about.html#Our Impact">Our Impact</a></li>
+                  <li><a class="dropdown-item" href="/about.html#Our Values">Our Value</a></li>
+                  </ul>
+            
+                <li class="nav-item dropdown">
+                  
+                  <a class="nav-link  " href="/index.html#pillar_1">
+                  What We Do
+                   </a> 
+                  
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#pillar_2">Life Learning</a></li>
+                  <li><a class="dropdown-item" href="#pillar_3">Self Development</a></li>
+                  <li><a class="dropdown-item" href="#pillar_4">Essential Academics</a></li>
+                  <li><a class="dropdown-item" href="#pillar_5">Career Aspirations</a></li>
+                  </ul>
+              
+                </li>
+              
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/blog.html"><i class="fa-solid fa-blog"></i>Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/contact.html"><i class="fa-solid fa-user"></i>Contact</a>
+              </li>
+             <!-- <button>
+                <a class="nav-link active" aria-current="page" href="/contact.html">Begain Your journey</a>
+              </button> -->
+
+              <!-- <button class="btnB mt-2 mx-4  ">
+                <a href=""></a>
+                Begin Your Journey
+                <i class="fa-solid fa-arrow-right"></i>
+              </button> -->
+             
+
+
+            
+          </div>
+        </div>
+      </nav>  
+    
+    </header>
+
+
+          <!-- About Start -->
+    <div class="container-xxl " id="pillar_2">
+      <div class="container mt-5 pt-5  pb-5">
+          <div class="row g-5 align-items-center">
+              <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                  <div class="about-img position-relative overflow-hidden pe-5 pt-5 mt-">
+                      <img class="img-fluid w-100" src="img/learn.jpg">
+                  </div>
+              </div>
+              <div class="col-lg-6 wow fadeIn mt-5 pt-5 ps-5 pb-5 mb-3" data-wow-delay="0.5s">
+                  <!-- <h2 class="display-5 mb-4 mt->5">Life Learning</h2> -->
+                  <h2 class=" fs-2 fw-bolder mt-5 pt-2 mb-5 ps-3">Life Learning</h2>
+                  <!-- <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p> -->
+                  <p><i class="fa fa-check text-primary me-3"></i>Personal Financial Management
+                  </p>
+                  <p><i class="fa fa-check text-primary me-3"></i>Goal Setting & Conquering Dreams
+                  </p>
+                  <p><i class="fa fa-check text-primary me-3"></i>Values & Self Identity
+                  </p>
+                  <p><i class="fa fa-check text-primary me-3"></i>Sex Education & Openness 
+                  </p>
+                  <p><i class="fa fa-check text-primary me-3"></i>Ethics, Culture & Aesthetics
+                  </p>
+                  <p><i class="fa fa-check text-primary me-3"></i>Happiness & Mental Health
+                  </p>
+                  <p><i class="fa fa-check text-primary me-3"></i>Passion, Purpose & Finding it
+                  </p>
+                  <p><i class="fa fa-check text-primary me-3"></i>Intellectuality & Critical Thinking
+                  </p>
+                  <p><i class="fa fa-check text-primary me-3 mb-5"></i>Creativity & Innovation
+                  </p>
+                  <a class="btnA btn-primary rounded-pill py-3 px-5 mt-5" href="">Read More</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- About End -->
+
+         <!-- Self Development -->
+         <div class="container-xxl " id="pillar_3">
+          <div class="container mt-5 pt-5  pb-5">
+              <div class="row g-5 align-items-center">
+                  <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img position-relative overflow-hidden pe-5 pt- mt-">
+                      <img class="img-fluid w-100" src="img/devlop.jpg">
+                  </div> 
+                  </div>
+                  <div class="col-lg-6 wow fadeIn mt-5 pt-5 ps-5 pb-5 mb-3" data-wow-delay="0.5s">
+                    
+                      <h2 class=" fs-2 fw-bolder mt-3 mb-5 ps-3">Self Development</h2>
+                     
+                      <p><i class="fa fa-check text-primary me-3"></i>Mental Resilience & Agility
+
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Emotional Intelligence
+
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Reinventing Yourself
+
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Brain & Learning Studying Techniques
+ 
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Motivation & Mindset
+
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Healthy Eating & Body Image
+
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Leadership Advancement 
+
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Stress Management
+
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3 "></i>Negotiation & Persuasion</p>
+                      <p><i class="fa fa-check text-primary me-3 "></i>Time Management 
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3 "></i>Art of Communication
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3 mb-5"></i>Art & Science of decision making
+                      </p>
+                      <a class="btnA btn-primary rounded-pill py-3 px-5 mt-5" href="">Read More</a>
+                     
+                  </div>
+                 
+              </div>
+              
+          </div>
+      </div>
+      <!-- Self Development -->
+
+        <!-- Essential Academics start -->
+        <div class="container-xxl " id="pillar_4">
+          <div class="container mt-5 pt-5  pb-5">
+              <div class="row g-5 align-items-center">
+                  <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img position-relative overflow-hidden pe-5 pt- mt-">
+                      <img class="img-fluid w-100" src="img/acadmic.jpg">
+                  </div> 
+                  </div>
+                  <div class="col-lg-6 wow fadeIn mt-5 pt-5 ps-5 pb-5 mb-3" data-wow-delay="0.5s">
+                    
+                      <h2 class=" fs-2 fw-bolder mt-5 mb-5 ps-3">Essential Academics</h2>
+                     
+                      <p><i class="fa fa-check text-primary me-3"></i>Artificial Intelligence   </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Fintech
+
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Block chain & Crypto
+
+
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Sustainability & Climate Change
+
+ 
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>E-commerce
+
+
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Unlocking Brain Power
+
+
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Coding
+ 
+
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Entrepreneurship
+
+
+                      </p>
+                      <p><i class="fa fa-check text-primary me-3 "></i>Future Tech & Startups
+                      </p>
+                     
+                      <p><i class="fa fa-check text-primary me-3 mb-5"></i>Leaders & CEOs
+
+                      </p>
+                      <a class="btnA btn-primary rounded-pill py-3 px-5 mt-5" href="">Read More</a>
+                     
+                  </div>
+                 
+              </div>
+              
+          </div>
+      </div>
+      <!-- Essential Academics End -->
+
+         <!--Career Aspirations start -->
+         <div class="container-xxl " id="pillar_5">
+          <div class="container mt-5 pt-5  pb-5">
+              <div class="row g-5 align-items-center">
+                  <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img position-relative overflow-hidden pe-5 pt- mt-">
+                      <img class="img-fluid w-100" src="img/career.jpg">
+                  </div> 
+                  </div>
+                  <div class="col-lg-6 wow fadeIn mt-5 pt-5 ps-5 pb-5 mb-3" data-wow-delay="0.5s">
+                    
+                      <h2 class=" fs-2 fw-bolder mt-5 mb-5 ps-3">Career Aspirations</h2>
+                     
+                      <p><i class="fa fa-check text-primary me-3"></i>Building a perfect C </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Ace Your Interview </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Email Writing / PPT & Excel </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Managing self and leading others </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Mentorship Program </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Career Landscape & Job Market </p>
+                      <p><i class="fa fa-check text-primary me-3"></i>JD Familiarization</p>
+                      <p><i class="fa fa-check text-primary me-3"></i>Career Path & Rewards </p>
+                       <p><i class="fa fa-check text-primary me-3 mb-5"></i>Finding YOU Program </p>
+                      <a class="btnA btn-primary rounded-pill py-3 px-5 mt-5" href="">Read More</a>
+                     
+                  </div>
+                 
+              </div>
+              
+          </div>
+      </div>
+      <!-- Career Aspirations End -->
+
+
+  
+
+
+
+    
+
+
+
+
+
+<div class="Cont container-fluid">
+  <div class=" container ">
+     
+      <div class=" text-center mt-5 pt-5">
+        
+        <p class="lead "></p>
+      </div>
+  
+      
+              <h2 class="h1  fw-bold mb-3 text-center fs-1">The best lessons start with the best content.</h2>
+             
+              <div class="w-100 all align-items-center ">
+              
+  
+              <div class="col-sm-5 col-lg-5 col-md-5 m-auto">
+                <label for="username" class="form-label"></label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <input type="text" class="form-control" id="username" placeholder="   Username" required>
+                <div class="invalid-feedback">
+                    Your username is required.
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-sm-5 col-lg-5 col-md-5 m-auto ">
+                <label for="lastName" class="form-label"></label>
+                <input type="text" class="form-control" id="lastName" placeholder="   First Name" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+  
+              <div class="col-sm-5 col-lg-5 col-md-5 m-auto">
+                <label for="lastName" class="form-label"></label>
+                <input type="text" class="form-control" id="lastName" placeholder="   Last Name" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+  
+  
+              <div class="botom ">
+              <div class="col-sm-5 col-lg-5 col-md-5 m-auto">
+                <label for="email" class="form-label"> <span class="text-body-secondary"></span></label>
+                <input type="email" class="form-control" id="email" placeholder="   Email Address">
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+              </div>
+  
+              <div class="col-sm-5 col-lg-5 col-md-5 m-auto">
+                <label for="address" class="form-label"></label>
+                <input type="text" class="form-control" id="address" placeholder="   Address">
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div>
+  
+              <!-- <div class="col-sm-5 col-lg-5 col-md-5 m-auto">
+                <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+              </div> -->
+  
+              <div class="col-sm-5 col-lg-5 col-md-5 m-auto">
+                <label for="country" class="form-label"></label>
+                <select class="form-select" id="country">
+                  <option value="">Country</option>
+                  
+                  <option>United States</option>
+                  <option>Dubai</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+  
+              <div class="col-sm-5 col-lg-5 col-md-5 m-auto">
+                <label for="state" class="form-label"></label>
+                <select class="form-select" id="state" required>
+                  <option value="">State</option>
+                  <option>California</option>
+                  
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+  
+              <div class="col-sm-5 col-lg-5 col-md-5 m-auto">
+                <label for="zip" class="form-label"></label>
+                <input type="text" class="form-control" id="zip" placeholder="   Zip-code" required>
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          
+  
+            
+  <!--        
+            <button class="btnc  btn-primary btn-lg mb-5" type="submit">Submit</button> -->
+          </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+       <footer class="container-fluid">
+         <div class="container mt-5">
+           <div class="row">
+              <div class="col-lg-2 col-sm-6">
+                
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="single-box ">
+                   <h2>Online Platform</h2>
+                   <ul>
+                      <li><a href="#">Region</a></li>
+                      <li><a href="#">Courses</a></li>
+                      <li><a href="#">Instructor</a></li>
+                      <li><a href="#">Events</a></li>
+                      <!-- <li><a href="#">Instructor Profile</a></li> -->
+                      <li><a href="#">Purchase</a></li>
+                   </ul>
+                </div>
+              </div>
+  
+              <div class="col-lg-3 col-sm-6">
+                <div class="single-box ps-5">
+                   <h2>Links</h2>
+                   <ul>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Gallery</a></li>
+                      <li><a href="#">News & Articles</a></li>
+                      <li><a href="#">FAQ'S</a></li>
+                      <li><a href="#">Sign In/Registration</a></li>
+                      <li><a href="#">Coming Soon</a></li>
+                   </ul>
+                </div>
+              </div>
+  
+              <div class="col-lg-3 col-sm-6">
+                <div class="single-box">
+                   <h2>Contact</h2>
+                   <p >Subscribe to our daily dose of insightful info and what’s happening around the world. 
+                  </p>
+                   <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2"><i class="fa fa-long-arrow-right"></i></span>
+                  </div>
+                  <h2>Follow Us on</h2>
+                  <p class="socials">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                  </p>
+                </div>
+              </div>
+  
+              
+           </div>
+         </div>
+         
+         <p class="copyright my-5 mx-5 px-5 mb-1  text-center">Copyright 2022 All Rights Reserved</p>
+       
+       </footer>
+
+
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      
+  </body>
+</html>
